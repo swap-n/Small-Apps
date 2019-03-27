@@ -26,9 +26,9 @@ Start the web app:
 Make REST calls to test it:
 - Open Windows Command Prompt in a new window
 - Make the following calls (in order) to test the example given in the question.
-Note: Please make sure to include -H "Content-Type: text" in the PUT calls, else there are parsing errors
-curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/1 -d "value=400"
-curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/2 -d "value=800"
-curl -X GET http://localhost:5000/api/v1/get/1
-curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/3 -d "value=1200" // key 2 gets evicted and is printed as output
-... and so on
+- Note: Please make sure to include -H "Content-Type: text" in the PUT calls, else there are parsing errors
+- curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/1 -d "value=400"
+- curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/2 -d "value=800"
+- curl -X GET http://localhost:5000/api/v1/get/1
+- curl -H "Content-Type: text" -X PUT http://localhost:5000/api/v1/put/3 -d "value=1200" // key 2 gets evicted and is printed as output
+- ... and so on
